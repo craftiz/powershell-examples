@@ -1,4 +1,5 @@
 Param (
+    [Parameter(Mandatory=$True)]
     [string]$filePath
 )
 
