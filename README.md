@@ -14,6 +14,17 @@ PowerShell profile
   - contains setting $env:NODE_PATH to proper location of NodeJS local data on Windows
   - changing color of command prompt
 
+SHA1 hash
+---------
+
+ Get-ReadmeHash.ps1
+
+  - use System.Security.Cryptography.SHA1Managed functions to compute SHA1 of README.md file
+
+ Get-FileHash.ps1
+
+   - compute SHA1 of file specified as parameter
+
 Vim configuration for PowerShell
 --------------------------------
 
