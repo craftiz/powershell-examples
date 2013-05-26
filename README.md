@@ -22,6 +22,20 @@ PowerShell profile
   - contains setting $env:NODE_PATH to proper location of NodeJS local data on Windows
   - changing color of command prompt
 
+Signing Scripts
+---------------
+
+ Sign-File.ps1
+
+  - specify path to PowerShell script as parameter
+  - the script will append signature to this will
+  - you can set up private certificate by calling commands from Visual Studio Command Prompt:
+```
+makecert -n "CN=PowerShell Local Certificate Root" -a sha1 -eku 1.3.6.1.5.5.7.3.3 -r -sv root.pvk root.cer -ss Root -sr localMachine
+makecert -pe -n "CN=PowerShell User" -ss MY -a sha1 -eku 1.3.6.1.5.5.7.3.3 -iv root.pvk -ic root.cer
+```
+  - more information about certificates and signing: http://www.hanselman.com/blog/SigningPowerShellScripts.aspx
+
 SHA1 hash
 ---------
 
