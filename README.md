@@ -3,6 +3,14 @@ powershell-examples
 
 Interesting PowerShell snippets
 
+Internet Explorer interaction
+-----------------------------
+
+ Get-QRCodeInExplorer.ps1
+
+  - integration of PowerShell and Internet Explorer, useful for automating web tests
+  - creates instance of Internet Explorer, modify DOM element and dispatch JavaScript event
+
 PowerShell profile
 ------------------
 
@@ -40,3 +48,4 @@ XML parsing
  Get-ForsquareJavaApiInfo.ps1
 
   - download pom.xml from internet, parse xml data and display version and license of Forsquare Java API
+
